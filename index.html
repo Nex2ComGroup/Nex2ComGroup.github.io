@@ -31,6 +31,7 @@
                 align-items: center;
                 background-color: #444;
                 padding: 10px 20px;
+                flex-wrap: wrap; /* 添加这一行，确保小屏幕时布局不换行 */
             }
             nav a {
                 color: white;
@@ -44,6 +45,8 @@
             }
             .language-buttons {
                 display: flex;
+                justify-content: flex-end;
+                flex-wrap: wrap; /* 使按钮在小屏幕上能自适应换行 */
             }
             .language-buttons button {
                 margin-left: 10px;
@@ -95,29 +98,23 @@
             .patents, .publications {
                 margin-top: 20px;
             }
-    
-            /* Media query for mobile devices */
+            /* 媒体查询：针对手机屏幕的优化 */
             @media (max-width: 768px) {
                 nav {
-                    flex-direction: column;
-                    align-items: flex-start;
-                }
-                nav a {
-                    padding: 10px;
-                    width: 100%;
-                    text-align: left;
+                    flex-direction: column; /* 使导航栏垂直显示 */
+                    align-items: flex-start; /* 左对齐 */
                 }
                 .language-buttons {
-                    margin-top: 10px;
+                    justify-content: center; /* 居中对齐 */
+                    margin-top: 10px; /* 添加一些间距 */
                 }
-                /* Hide the language buttons in smaller screen sizes */
                 .language-buttons button {
-                    width: 100%;
-                    text-align: center;
+                    margin-left: 5px;
+                    margin-top: 5px; /* 在按钮之间增加间距 */
                 }
             }
         </style>
-    </head>
+    </head>    
 <body>
     <header>
         <h1>Nex2Com Group</h1>
