@@ -1,102 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nex2Com Group: Next-generation Communication and Computation Optimization</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 20px;
-        }
-        header h1 {
-            font-size: 36px;
-            margin: 0;
-        }
-        header h2 {
-            font-size: 18px;
-            margin: 10px 0 0;
-        }
-        nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #444;
-            padding: 10px 20px;
-        }
-        nav a {
-            color: white;
-            padding: 14px 20px;
-            text-decoration: none;
-            text-align: center;
-        }
-        nav a:hover {
-            background-color: #ddd;
-            color: black;
-        }
-        .language-buttons {
-            display: flex;
-        }
-        .language-buttons button {
-            margin-left: 10px;
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-            border: none;
-            background-color: #333;
-            color: white;
-        }
-        section {
-            padding: 20px;
-            margin: 20px;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        .container {
-            max-width: 1200px;
-            margin: auto;
-        }
-        .hidden {
-            display: none;
-        }
-        ol li {
-            margin-bottom: 10px; /* 增加行距 */
-        }
-        .member-photo {
-            width: 100px;
-            height: 100px;
-            object-fit: cover;
-            border-radius: 50%;
-        }
-        .member-info {
-            display: inline-block;
-            margin-left: 15px;
-        }
-        .member-info p {
-            margin: 5px 0;
-        }
-        .member-group {
-            display: flex;
-            flex-wrap: wrap;
-        }
-        .member {
-            margin: 20px;
-            width: 300px;
-        }
-        .patents, .publications {
-            margin-top: 20px;
-        }
-    </style>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nex2Com Group: Next-generation Communication and Computation Optimization</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f4f4f4;
+            }
+            header {
+                background-color: #333;
+                color: white;
+                text-align: center;
+                padding: 20px;
+            }
+            header h1 {
+                font-size: 36px;
+                margin: 0;
+            }
+            header h2 {
+                font-size: 18px;
+                margin: 10px 0 0;
+            }
+            nav {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                background-color: #444;
+                padding: 10px 20px;
+            }
+            nav a {
+                color: white;
+                padding: 14px 20px;
+                text-decoration: none;
+                text-align: center;
+            }
+            nav a:hover {
+                background-color: #ddd;
+                color: black;
+            }
+            .language-buttons {
+                display: flex;
+            }
+            .language-buttons button {
+                margin-left: 10px;
+                padding: 10px 20px;
+                font-size: 16px;
+                cursor: pointer;
+                border: none;
+                background-color: #333;
+                color: white;
+            }
+            section {
+                padding: 20px;
+                margin: 20px;
+                background-color: white;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            }
+            .container {
+                max-width: 1200px;
+                margin: auto;
+            }
+            .hidden {
+                display: none;
+            }
+            ol li {
+                margin-bottom: 10px; /* 增加行距 */
+            }
+            .member-photo {
+                width: 100px;
+                height: 100px;
+                object-fit: cover;
+                border-radius: 50%;
+            }
+            .member-info {
+                display: inline-block;
+                margin-left: 15px;
+            }
+            .member-info p {
+                margin: 5px 0;
+            }
+            .member-group {
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .member {
+                margin: 20px;
+                width: 300px;
+            }
+            .patents, .publications {
+                margin-top: 20px;
+            }
+    
+            /* Media query for mobile devices */
+            @media (max-width: 768px) {
+                nav {
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
+                nav a {
+                    padding: 10px;
+                    width: 100%;
+                    text-align: left;
+                }
+                .language-buttons {
+                    margin-top: 10px;
+                }
+                /* Hide the language buttons in smaller screen sizes */
+                .language-buttons button {
+                    width: 100%;
+                    text-align: center;
+                }
+            }
+        </style>
+    </head>
 <body>
     <header>
         <h1>Nex2Com Group</h1>
