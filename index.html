@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nex2Com Group: Next-generation Communication and Computation Optimization</title>
     <style>
-        /* 简单的CSS样式 */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -69,6 +68,33 @@
         .hidden {
             display: none;
         }
+        ol li {
+            margin-bottom: 10px; /* 增加行距 */
+        }
+        .member-photo {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+        .member-info {
+            display: inline-block;
+            margin-left: 15px;
+        }
+        .member-info p {
+            margin: 5px 0;
+        }
+        .member-group {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .member {
+            margin: 20px;
+            width: 300px;
+        }
+        .patents, .publications {
+            margin-top: 20px;
+        }
     </style>
 </head>
 <body>
@@ -79,11 +105,19 @@
 
     <nav>
         <div>
-            <a href="#description">Description</a>
-            <a href="#research-directions">Research Directions</a>
-            <a href="#invitation">Open Invitation</a>
-            <a href="#members">Members</a>
-            <a href="#publications">Publications</a>
+            <a href="#description" class="lang en">Description</a>
+            <a href="#research-directions" class="lang en">Research Directions</a>
+            <a href="#invitation" class="lang en">Open Invitation</a>
+            <a href="#members" class="lang en">Members</a>
+            <a href="#publications" class="lang en">Publications</a>
+            <a href="#patents" class="lang en">Patents</a>
+            
+            <a href="#description-cn" class="lang cn hidden">描述</a>
+            <a href="#research-directions-cn" class="lang cn hidden">研究方向</a>
+            <a href="#invitation-cn" class="lang cn hidden">开放邀请</a>
+            <a href="#members-cn" class="lang cn hidden">成员</a>
+            <a href="#publications-cn" class="lang cn hidden">出版物</a>
+            <a href="#patents-cn" class="lang cn hidden">专利</a>
         </div>
 
         <div class="language-buttons">
@@ -96,7 +130,7 @@
         <!-- English Version -->
         <section id="description-en" class="lang en">
             <h2>Description</h2>
-            <p>The "Nex2Com" Research Group is a team at Guangxi University, led by Prof. Zhenrong Zhang, focused on large-scale distributed computing and communication optimization, particularly on optimizing and applying large language models (LLMs). Our research spans several cutting-edge areas, including distributed systems, computation optimization, communication networks, and artificial intelligence.</p>
+            <p>The <b>Nex2Com Research Group</b> is a team at Guangxi University, led by Prof. Zhenrong Zhang, focused on large-scale distributed computing and communication optimization, particularly on optimizing and applying large language models (LLMs). Our research spans several cutting-edge areas, including distributed systems, computation optimization, communication networks, and artificial intelligence.</p>
         </section>
 
         <section id="research-directions-en" class="lang en">
@@ -113,32 +147,108 @@
 
         <section id="invitation-en" class="lang en">
             <h2>Open Invitation</h2>
-            <p>We warmly welcome undergraduate and graduate students to join our research group and participate in these cutting-edge research topics. If you are interested in other areas of research not covered in our current focus, feel free to contact @fangz for further discussion.</p>
+            <p>We warmly welcome <b>undergraduate and graduate students</b> to join our research group and participate in these research topics. If you are interested in other areas of research not covered in our current focus, feel free to <a href="noah183225@gmail.com">contact us</a> or members for further discussion.</p>
         </section>
 
         <section id="members-en" class="lang en">
             <h2>Members</h2>
-            <p>Information about team members will go here.</p>
+            <h3>Current Members</h3>
+            <div class="member-group">
+                <div class="member">
+                    <img src="/Nex2ComGroup/members/zhang.jpg" alt="Professor Photo" class="member-photo">
+                    <div class="member-info">
+                        <p><strong>Prof. Zhenrong Zhang</strong></p>
+                        <p>Email: zzr76@gamil.com</p>
+                        <p>Field: Wireless Communications, Fiber Optic Sensing, Large Language Models, Federated Learning</p>
+                    </div>
+                </div>
+                <div class="member">
+                    <img src="/Nex2ComGroup/members/index.png" alt="Doctoral Student Photo" class="member-photo">
+                    <div class="member-info">
+                        <p><strong>Junbo Xiao</strong></p>
+                        <p>Email: 1756321248@qq.com</p>
+                        <p>Github: <a href="https://github.com/xiaomouya?tab=repositories">github.com/Xiaojunbo</a></p>
+                        <p>Field: Wireless Communications, Covert Communications </p>
+                    </div>
+                </div>
+                <div class="member">
+                    <img src="/Nex2ComGroup/members/yang.png" alt="Master's Student Photo" class="member-photo">
+                    <div class="member-info">
+                        <p><strong>Yang yang</strong></p>
+                        <p>Email: 951394033@qq.com</p>
+                        <p>Github: <a href="https://github.com/polar1ce">github.com/Yangyang</a></p>
+                        <p>Field: Federated Learning, Large Language Models, Reinforcement Learning</p>
+                    </div>
+                </div>
+                <div class="member">
+                    <img src="/Nex2ComGroup/members/FANG.png" alt="Master's Student Photo" class="member-photo">
+                    <div class="member-info">
+                        <p><strong>Zhou Fang</strong></p>
+                        <p>Email: 2213301007@st.gxu.edu.cn</p>
+                        <p>Github: <a href="https://github.com/Fangzhou-Code">github.com/FangZhou</a></p>
+                        <p>Field: Federated Learning, Large Language Models, Blockchain</p>
+                    </div>
+                </div>
+                <div class="member">
+                    <img src="/Nex2ComGroup/members/index.png" alt="Master's Student Photo" class="member-photo">
+                    <div class="member-info">
+                        <p><strong>Jieshu ma</strong></p>
+                        <p>Email: 2510258691@qq.com</p>
+                        <p>Github: <a href="https://github.com/Hayee233">github.com/Majieshu</a></p>
+                        <p>Field: Federated Learning, Large Language Models</p>
+                    </div>
+                </div>
+            </div>
+            
+
+            <h3>Previous Members</h3>
+            <div class="member-group">
+                <div class="member">
+                    <img src="/Nex2ComGroup/members/xie.png" alt="Former Member Photo" class="member-photo">
+                    <div class="member-info">
+                        <p><strong>Zhilan Xie</strong></p>
+                        <p>Email: 2013391128@st.gxu.edu.cn</p>
+                        <p>Whereabouts: Peking University</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section id="publications-en" class="lang en">
             <h2>Publications</h2>
-            <p>Information about publications will go here.</p>
+            <p>[1] Z. Xie, S. Dang, and Z. Zhang, "On state transition probability and performance of direct acyclic graph based ledgers," IEEE Trans. Mob. Comput., vol. 23, no. 4, pp. 2780–2794, Apr. 2024.</p>
+            <p>[2] Z. Xie, S. Dang, and Z. Zhang, "On convergence probability of direct acyclic graph-based ledgers in forking blockchain systems," IEEE Syst. J., vol. 17, no. 1, pp. 1121–1124, Sept. 2023.</p>
+            <p>[3] 杨昶楠，张振荣，郑嘉利，曲勃源. 双支路注意力特征融合的卷积稀疏编码目标检测[J]. 计算机工程与设计. 2024.</p>
+            <p>[4] Y. Yang, S. Dang, and Z. Zhang, "An Adaptive Compression and Communication Framework for Wireless Federated Learning," IEEE Trans. Mob. Comput., vol. 23, no. 12, pp. 10835-10854, Dec. 2024.</p>
+            <p>[5] Z. Fang, S. Dang, Y. Yang, Z. Ge, X. Li and Z. Zhang, "FedSC: A Sidechain-Enhanced Edge Computing Framework for 6G IoT Multiple Scenarios" in IEEE Internet Things J., 2024 (Early Access).</p>
+            <p>[6] T. Gan, S. Dang, X. Li, and Z. Zhang, "Integrated sensing and communications for 6g: Prospects and challenges of using thz radios," in 2024 IEEE Wireless Communications and Networking Conference (WCNC), Apr. 2024, pp. 1–6.</p>
+            <p>[7] Li, S. Dang, Z. Zhang, and L. Wang, "On converged secrecy outage performance for ris-aided communications," in 2023 IEEE 98th Vehicular Technology Conference (VTC2023-Fall), Oct. 2023, pp. 1–6.</p>
+            <p>[8] Li, S. Dang, Z. Zhang, and L. Wang, "When industrial metaverse meets 6g: The next revolution and deployment challenges," in 2024 IEEE Wireless Communications and Networking Conference (WCNC), Apr. 2024, pp. 1–6.</p>
+            <p>[9] W. Li, S. Dang, Z. Zhang, and Z. Ge, "Combined bulk and per-subcarrier relay selection enabled by cascaded neural computing," in IEEE INFOCOM 2023 - IEEE Conference on Computer Communications Workshops (INFOCOM WKSHPS), Aug. 2023, pp. 1–6.</p>
+
+        </section>
+
+        <section id="patents-en" class="lang en">
+            <h2>Patents</h2>
+            <h3>Invention Patents</h3>
+            <p>[1] 张振荣，徐文杰，卿国能，张伊祎，朱硕隆，一种高精度生物触控识别装置，2023.04.25，中国，ZL 202111238136.2</p>
+            <p>[2] 张振荣，徐文杰，卿国能，韦雪玲，李宁，一种抗干扰的大尺寸触控装置及方法，2023.06.23，中国，ZL 202210093394.4</p>
+           
         </section>
 
         <!-- Chinese Version -->
         <section id="description-cn" class="lang cn hidden">
-            <h2>简介</h2>
-            <p>Nex2Com 小组是广西大学的一支研究团队，由张教授领导，致力于大规模分布式计算和通信优化，重点研究大语言模型（LLM）优化与应用。我们的研究涉及多个前沿领域，包括分布式系统、计算优化、通信网络和人工智能。</p>
+            <h2>描述</h2>
+            <p> <b>Nex2Com 研究团队</b> 是广西大学的一支团队，由张振荣教授领导，专注于大规模分布式计算与通信优化，特别是在大语言模型（LLM）的优化与应用方面。我们的研究涉及多个前沿领域，包括分布式系统、计算优化、通信网络和人工智能。</p>
         </section>
 
         <section id="research-directions-cn" class="lang cn hidden">
             <h2>当前研究方向</h2>
             <ol>
-                <li><b>基于大语言模型的智能体设计</b></li>
-                <li><b>联邦大模型中的高效通信与计算优化</b></li>
-                <li><b>基于资源受限设备的分布式模型训练与推理</b></li>
-                <li><b>强化学习在通信优化中的应用</b></li>
+                <li><b>基于大语言模型（LLMs）的智能体设计</b></li>
+                <li><b>联合大模型之间高效通信和计算优化</b></li>
+                <li><b>资源受限设备上的分布式模型训练与推理</b></li>
+                <li><b>通信优化的强化学习</b></li>
                 <li><b>基于强化学习的联邦学习</b></li>
                 <li><b>基于区块链的去中心化联邦学习优化</b></li>
             </ol>
@@ -146,35 +256,102 @@
 
         <section id="invitation-cn" class="lang cn hidden">
             <h2>开放邀请</h2>
-            <p>我们诚邀本科生和研究生加入我们的研究小组，参与这些前沿课题的研究。如果您对其他研究领域感兴趣，且该领域尚未包含在我们的研究方向中，欢迎联系@fangz进行详细沟通。</p>
+            <p>我们诚邀本科生和研究生加入我们的研究团队，参与这些前沿的研究课题。如果你对我们当前研究方向之外的领域感兴趣，请随时联系@fangz进行讨论。</p>
         </section>
 
         <section id="members-cn" class="lang cn hidden">
             <h2>成员</h2>
-            <p>团队成员的信息将在这里展示。</p>
+            <h3>当前成员</h3>
+            <div class="member-group">
+                <div class="member">
+                    <img src="professor_photo.jpg" alt="教授照片" class="member-photo">
+                    <div class="member-info">
+                        <p><strong>张振荣教授</strong></p>
+                        <p>邮箱：zhang@guangxi.edu.cn</p>
+                        <p>Github: <a href="https://github.com/zhang">github.com/zhang</a></p>
+                        <p>领域：联邦学习，区块链</p>
+                    </div>
+                </div>
+                <div class="member">
+                    <img src="doctoral_student_photo.jpg" alt="博士生照片" class="member-photo">
+                    <div class="member-info">
+                        <p><strong>李伟博士</strong></p>
+                        <p>邮箱：wei.li@guangxi.edu.cn</p>
+                        <p>Github: <a href="https://github.com/wei_li">github.com/wei_li</a></p>
+                        <p>领域：无线通信</p>
+                    </div>
+                </div>
+                <div class="member">
+                    <img src="master_student_photo.jpg" alt="硕士生照片" class="member-photo">
+                    <div class="member-info">
+                        <p><strong>刘玉硕士</strong></p>
+                        <p>邮箱：yu.liu@guangxi.edu.cn</p>
+                        <p>Github: <a href="https://github.com/yu_liu">github.com/yu_liu</a></p>
+                        <p>领域：物联网，机器学习</p>
+                    </div>
+                </div>
+            </div>
+
+            <h3>前成员</h3>
+            <div class="member-group">
+                <div class="member">
+                    <img src="former_member_photo.jpg" alt="前成员照片" class="member-photo">
+                    <div class="member-info">
+                        <p><strong>张立军博士</strong></p>
+                        <p>邮箱：lijun.zhang@company.com</p>
+                        <p>去向：XYZ公司</p>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <section id="publications-cn" class="lang cn hidden">
             <h2>出版物</h2>
-            <p>出版物信息将在这里展示。</p>
+            <p>[1] Z. Xie, S. Dang, and Z. Zhang, "On state transition probability and performance of direct acyclic graph based ledgers," IEEE Trans. Mob. Comput., vol. 23, no. 4, pp. 2780–2794, Apr. 2024.</p>
+            <p>[2] Z. Xie, S. Dang, and Z. Zhang, "On convergence probability of direct acyclic graph-based ledgers in forking blockchain systems," IEEE Syst. J., vol. 17, no. 1, pp. 1121–1124, Sept. 2023.</p>
+            <p>[3] 杨昶楠，张振荣，郑嘉利，曲勃源. 双支路注意力特征融合的卷积稀疏编码目标检测[J]. 计算机工程与设计. 2024.</p>
+            <p>[4] Y. Yang, S. Dang, and Z. Zhang, "An Adaptive Compression and Communication Framework for Wireless Federated Learning," IEEE Trans. Mob. Comput., vol. 23, no. 12, pp. 10835-10854, Dec. 2024.</p>
+            <p>[5] Z. Fang, S. Dang, Y. Yang, Z. Ge, X. Li and Z. Zhang, "FedSC: A Sidechain-Enhanced Edge Computing Framework for 6G IoT Multiple Scenarios" in IEEE Internet Things J., 2024 (Early Access).</p>
+            <p>[6] T. Gan, S. Dang, X. Li, and Z. Zhang, "Integrated sensing and communications for 6g: Prospects and challenges of using thz radios," in 2024 IEEE Wireless Communications and Networking Conference (WCNC), Apr. 2024, pp. 1–6.</p>
+            <p>[7] Li, S. Dang, Z. Zhang, and L. Wang, "On converged secrecy outage performance for ris-aided communications," in 2023 IEEE 98th Vehicular Technology Conference (VTC2023-Fall), Oct. 2023, pp. 1–6.</p>
+            <p>[8] Li, S. Dang, Z. Zhang, and L. Wang, "When industrial metaverse meets 6g: The next revolution and deployment challenges," in 2024 IEEE Wireless Communications and Networking Conference (WCNC), Apr. 2024, pp. 1–6.</p>
+            <p>[9] W. Li, S. Dang, Z. Zhang, and Z. Ge, "Combined bulk and per-subcarrier relay selection enabled by cascaded neural computing," in IEEE INFOCOM 2023 - IEEE Conference on Computer Communications Workshops (INFOCOM WKSHPS), Aug. 2023, pp. 1–6.</p>
+
         </section>
+
+        <section id="patents-cn" class="lang cn hidden">
+            <h2>专利</h2>
+            <h3>发明专利</h3>
+            <p>[1] 张振荣，徐文杰，卿国能，张伊祎，朱硕隆，一种高精度生物触控识别装置，2023年4月25日，中国，ZL 202111238136.2</p>
+            <p>[2] 张振荣，徐文杰，卿国能，韦雪玲，李宁，一种抗干扰的大尺寸触控装置及方法，2023年6月23日，中国，ZL 202210093394.4</p>
+        </section>
+
     </div>
 
     <script>
-        function toggleLanguage(lang) {
-            // 隐藏所有语言版本
-            const enSections = document.querySelectorAll('.en');
-            const cnSections = document.querySelectorAll('.cn');
-            enSections.forEach(section => section.classList.add('hidden'));
-            cnSections.forEach(section => section.classList.add('hidden'));
+        function toggleLanguage(language) {
+            const sections = document.querySelectorAll('.lang');
+            sections.forEach(section => {
+                section.classList.add('hidden');
+            });
 
-            // 根据选择的语言显示对应部分
-            if (lang === 'en') {
-                enSections.forEach(section => section.classList.remove('hidden'));
-            } else if (lang === 'cn') {
-                cnSections.forEach(section => section.classList.remove('hidden'));
-            }
+            const activeSections = document.querySelectorAll(`.lang.${language}`);
+            activeSections.forEach(section => {
+                section.classList.remove('hidden');
+            });
+
+            const links = document.querySelectorAll('nav a');
+            links.forEach(link => {
+                if (link.classList.contains(language)) {
+                    link.classList.remove('hidden');
+                } else {
+                    link.classList.add('hidden');
+                }
+            });
         }
+
+        // Initial language setup
+        toggleLanguage('en');
     </script>
 </body>
 </html>
