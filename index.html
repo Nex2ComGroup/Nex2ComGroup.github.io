@@ -18,10 +18,20 @@
             text-align: center;
             padding: 20px;
         }
+        header h1 {
+            font-size: 36px;
+            margin: 0;
+        }
+        header h2 {
+            font-size: 18px;
+            margin: 10px 0 0;
+        }
         nav {
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
+            align-items: center;
             background-color: #444;
+            padding: 10px 20px;
         }
         nav a {
             color: white;
@@ -32,6 +42,18 @@
         nav a:hover {
             background-color: #ddd;
             color: black;
+        }
+        .language-buttons {
+            display: flex;
+        }
+        .language-buttons button {
+            margin-left: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            background-color: #333;
+            color: white;
         }
         section {
             padding: 20px;
@@ -44,19 +66,6 @@
             max-width: 1200px;
             margin: auto;
         }
-        #language-toggle {
-            text-align: center;
-            padding: 10px;
-        }
-        #language-toggle button {
-            margin: 5px;
-            padding: 10px 20px;
-            font-size: 16px;
-            cursor: pointer;
-            border: none;
-            background-color: #333;
-            color: white;
-        }
         .hidden {
             display: none;
         }
@@ -64,21 +73,24 @@
 </head>
 <body>
     <header>
-        <h1>Nex2Com Group: Next-generation Communication and Computation Optimization</h1>
+        <h1>Nex2Com Group</h1>
+        <h2>Next-generation Communication and Computation Optimization</h2>
     </header>
 
     <nav>
-        <a href="#description">Description</a>
-        <a href="#research-directions">Research Directions</a>
-        <a href="#invitation">Open Invitation</a>
-        <a href="#members">Members</a>
-        <a href="#publications">Publications</a>
-    </nav>
+        <div>
+            <a href="#description">Description</a>
+            <a href="#research-directions">Research Directions</a>
+            <a href="#invitation">Open Invitation</a>
+            <a href="#members">Members</a>
+            <a href="#publications">Publications</a>
+        </div>
 
-    <div id="language-toggle">
-        <button onclick="toggleLanguage('en')">English</button>
-        <button onclick="toggleLanguage('cn')">中文</button>
-    </div>
+        <div class="language-buttons">
+            <button onclick="toggleLanguage('en')">English</button>
+            <button onclick="toggleLanguage('cn')">中文</button>
+        </div>
+    </nav>
 
     <div class="container">
         <!-- English Version -->
